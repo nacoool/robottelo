@@ -39,6 +39,8 @@ def module_libvirt_image(module_target_sat, module_cr_libvirt):
 def module_libvirt_provisioning_sat(module_provisioning_sat, libvirt):
     # Configure Libvirt CR for provisioning
     module_provisioning_sat.sat.configure_libvirt_cr(server_fqdn=libvirt.fqdn)
+    # Restart DHCP service for libvirt provisioning
+    module_provisioning_sat.sat.execute('systemctl restart dhcpd')
     return module_provisioning_sat
 
 
