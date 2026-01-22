@@ -40,6 +40,7 @@ from robottelo.constants import FOREMAN_PROVIDERS
 from robottelo.exceptions import CLIReturnCodeError
 from robottelo.hosts import ContentHost
 from robottelo.utils.datafactory import parametrized
+from robottelo.utils.issue_handlers import is_open
 
 
 def valid_name_desc_data():
@@ -363,7 +364,7 @@ def test_positive_update_console_password(set_console_password, module_target_sa
 @pytest.mark.e2e
 @pytest.mark.on_premises_provisioning
 @pytest.mark.rhel_ver_match('[7]')
-@pytest.mark.parametrize('pxe_loader', ['uefi', 'secureboot'], indirect=True)
+@pytest.mark.parametrize('pxe_loader', ['bios', 'uefi', 'secureboot'], indirect=True)
 @pytest.mark.parametrize('setting_update', ['destroy_vm_on_host_delete=True'], indirect=True)
 @pytest.mark.parametrize('libvirt', ['libvirt9', 'libvirt10'], indirect=True)
 def test_positive_provision_end_to_end(
@@ -376,6 +377,7 @@ def test_positive_provision_end_to_end(
     module_location,
     provisioning_hostgroup,
     module_provisioning_rhel_content,
+    module_restart_dhcpd,
 ):
     """Provision a host on Libvirt compute resource with the help of hostgroup.
 
@@ -400,6 +402,10 @@ def test_positive_provision_end_to_end(
 
     :customerscenario: true
     """
+    # Skip test for UEFI and SecureBoot loaders
+    if is_open('SAT-41340') and pxe_loader.vm_firmware in ['uefi', 'uefi_secure_boot']:
+        pytest.skip(f"Test not supported for {pxe_loader.vm_firmware} firmware")
+
     sat = module_libvirt_provisioning_sat.sat
     cr_name = gen_string('alpha')
     hostname = gen_string('alpha').lower()

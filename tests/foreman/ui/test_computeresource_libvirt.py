@@ -131,6 +131,7 @@ def test_positive_provision_end_to_end(
     provisioning_hostgroup,
     module_libvirt_provisioning_sat,
     module_provisioning_rhel_content,
+    module_restart_dhcpd,
 ):
     """Provision Host on libvirt compute resource, and delete it afterwards
 
