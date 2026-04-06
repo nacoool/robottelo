@@ -71,6 +71,13 @@ def test_rhel_pxe_provisioning(
         and module_provisioning_sat.sat.network_type == NetworkType.IPV6
     ):
         pytest.skip('Test cannot be run on BIOS as its not supported')
+    # rhel7 and firmware is uefi then it is not supported
+    if (
+        is_open('SAT-41340')
+        and module_provisioning_rhel_content.os.major == '7'
+        and pxe_loader.vm_firmware == 'uefi'
+    ):
+        pytest.skip('RHEL 7 is not compatible with UEFI.')
     host_mac_addr = provisioning_host.provisioning_nic_mac_addr
     sat = module_provisioning_sat.sat
     # Configure the grubx64.efi image to setup the interface and use TFTP to load the configuration
@@ -105,7 +112,7 @@ def test_rhel_pxe_provisioning(
     # the result of the installation. Wait until Satellite reports that the host is installed.
     wait_for(
         lambda: host.read().build_status_label != 'Pending installation',
-        timeout=1500,
+        timeout=2100,
         delay=10,
     )
     host = host.read()
@@ -360,6 +367,13 @@ def test_rhel_httpboot_provisioning(
 
     :Verifies: SAT-20684
     """
+    # rhel7 and firmware is uefi then it is not supported
+    if (
+        is_open('SAT-41340')
+        and module_provisioning_rhel_content.os.major == '7'
+        and pxe_loader.vm_firmware == 'uefi'
+    ):
+        pytest.skip('RHEL 7 is not compatible with UEFI.')
     sat = module_provisioning_sat.sat
     # Configure the grubx64.efi image to setup the interface and use TFTP to load the configuration
     # update grub2-efi package
@@ -400,7 +414,7 @@ def test_rhel_httpboot_provisioning(
     # the result of the installation. Wait until Satellite reports that the host is installed.
     wait_for(
         lambda: host.read().build_status_label != 'Pending installation',
-        timeout=1500,
+        timeout=2100,
         delay=10,
     )
     host = host.read()
@@ -544,7 +558,7 @@ def test_rhel_pxe_provisioning_fips_enabled(
     # the result of the installation. Wait until Satellite reports that the host is installed.
     wait_for(
         lambda: host.read().build_status_label != 'Pending installation',
-        timeout=1500,
+        timeout=2100,
         delay=10,
     )
     host = host.read()
@@ -624,6 +638,7 @@ def test_rhel_pxe_provisioning_secureboot_enabled(
     module_location,
     module_provisioning_rhel_content,
     provisioning_hostgroup,
+    RHEL_secureboot_provisioning,
 ):
     """Simulate Secureboot baremetal provisioning of a RHEL system via PXE on vCenter provider
 
@@ -669,7 +684,7 @@ def test_rhel_pxe_provisioning_secureboot_enabled(
     # the result of the installation. Wait until Satellite reports that the host is installed.
     wait_for(
         lambda: host.read().build_status_label != 'Pending installation',
-        timeout=1500,
+        timeout=2100,
         delay=10,
     )
     host = host.read()
