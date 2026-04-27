@@ -31471,24 +31471,6 @@
               "value": "LIST"
             },
             {
-              "help": "VALUE/NUMBER     Set the current location context for the request",
-              "name": "location",
-              "shortname": null,
-              "value": null
-            },
-            {
-              "help": "VALUE/NUMBER     Set the current location context for the request",
-              "name": "location-id",
-              "shortname": null,
-              "value": null
-            },
-            {
-              "help": "VALUE/NUMBER     Set the current location context for the request",
-              "name": "location-title",
-              "shortname": null,
-              "value": null
-            },
-            {
               "help": "Medium names/ids",
               "name": "media",
               "shortname": null,
@@ -31507,38 +31489,8 @@
               "value": "VALUE"
             },
             {
-              "help": "VALUE/NUMBER Set the current organization context for the request",
-              "name": "organization",
-              "shortname": null,
-              "value": null
-            },
-            {
-              "help": "VALUE/NUMBER Set the current organization context for the request",
-              "name": "organization-id",
-              "shortname": null,
-              "value": null
-            },
-            {
-              "help": "VALUE/NUMBER Set the current organization context for the request",
-              "name": "organization-title",
-              "shortname": null,
-              "value": null
-            },
-            {
-              "help": "Associated organization names/titles/ids",
-              "name": "organizations",
-              "shortname": null,
-              "value": "LIST"
-            },
-            {
               "help": "Associated organization names/titles/ids",
               "name": "organization-ids",
-              "shortname": null,
-              "value": "LIST"
-            },
-            {
-              "help": "Associated organization names/titles/ids",
-              "name": "organization-titles",
               "shortname": null,
               "value": "LIST"
             },
@@ -31640,46 +31592,10 @@
               "value": "VALUE"
             },
             {
-              "help": "VALUE/NUMBER     Set the current location context for the request",
-              "name": "location",
-              "shortname": null,
-              "value": null
-            },
-            {
-              "help": "VALUE/NUMBER     Set the current location context for the request",
-              "name": "location-id",
-              "shortname": null,
-              "value": null
-            },
-            {
-              "help": "VALUE/NUMBER     Set the current location context for the request",
-              "name": "location-title",
-              "shortname": null,
-              "value": null
-            },
-            {
               "help": "Set the current organization context for the request",
               "name": "name",
               "shortname": null,
               "value": "VALUE"
-            },
-            {
-              "help": "VALUE/NUMBER Set the current organization context for the request",
-              "name": "organization",
-              "shortname": null,
-              "value": null
-            },
-            {
-              "help": "VALUE/NUMBER Set the current organization context for the request",
-              "name": "organization-id",
-              "shortname": null,
-              "value": null
-            },
-            {
-              "help": "VALUE/NUMBER Set the current organization context for the request",
-              "name": "organization-title",
-              "shortname": null,
-              "value": null
             },
             {
               "help": "Set the current organization context for the request",
@@ -31750,46 +31666,10 @@
               "value": "VALUE"
             },
             {
-              "help": "VALUE/NUMBER     Set the current location context for the request",
-              "name": "location",
-              "shortname": null,
-              "value": null
-            },
-            {
-              "help": "VALUE/NUMBER     Set the current location context for the request",
-              "name": "location-id",
-              "shortname": null,
-              "value": null
-            },
-            {
-              "help": "VALUE/NUMBER     Set the current location context for the request",
-              "name": "location-title",
-              "shortname": null,
-              "value": null
-            },
-            {
               "help": "Set the current organization context for the request",
               "name": "name",
               "shortname": null,
               "value": "VALUE"
-            },
-            {
-              "help": "VALUE/NUMBER Set the current organization context for the request",
-              "name": "organization",
-              "shortname": null,
-              "value": null
-            },
-            {
-              "help": "VALUE/NUMBER Set the current organization context for the request",
-              "name": "organization-id",
-              "shortname": null,
-              "value": null
-            },
-            {
-              "help": "VALUE/NUMBER Set the current organization context for the request",
-              "name": "organization-title",
-              "shortname": null,
-              "value": null
             },
             {
               "help": "Display hidden parameter values",
@@ -31823,46 +31703,10 @@
               "value": "LIST"
             },
             {
-              "help": "VALUE/NUMBER     Set the current location context for the request",
-              "name": "location",
-              "shortname": null,
-              "value": null
-            },
-            {
-              "help": "VALUE/NUMBER     Set the current location context for the request",
-              "name": "location-id",
-              "shortname": null,
-              "value": null
-            },
-            {
-              "help": "VALUE/NUMBER     Set the current location context for the request",
-              "name": "location-title",
-              "shortname": null,
-              "value": null
-            },
-            {
               "help": "Sort and order by a searchable field, e.g. '<field> DESC'",
               "name": "order",
               "shortname": null,
               "value": "VALUE"
-            },
-            {
-              "help": "VALUE/NUMBER Set the current organization context for the request",
-              "name": "organization",
-              "shortname": null,
-              "value": null
-            },
-            {
-              "help": "VALUE/NUMBER Set the current organization context for the request",
-              "name": "organization-id",
-              "shortname": null,
-              "value": null
-            },
-            {
-              "help": "VALUE/NUMBER Set the current organization context for the request",
-              "name": "organization-title",
-              "shortname": null,
-              "value": null
             },
             {
               "help": "Page number, starting at 1",
@@ -32434,24 +32278,6 @@
               "value": "LIST"
             },
             {
-              "help": "VALUE/NUMBER     Set the current location context for the request",
-              "name": "location",
-              "shortname": null,
-              "value": null
-            },
-            {
-              "help": "VALUE/NUMBER     Set the current location context for the request",
-              "name": "location-id",
-              "shortname": null,
-              "value": null
-            },
-            {
-              "help": "VALUE/NUMBER     Set the current location context for the request",
-              "name": "location-title",
-              "shortname": null,
-              "value": null
-            },
-            {
               "help": "Medium names/ids",
               "name": "media",
               "shortname": null,
@@ -32476,38 +32302,8 @@
               "value": "VALUE"
             },
             {
-              "help": "VALUE/NUMBER Set the current organization context for the request",
-              "name": "organization",
-              "shortname": null,
-              "value": null
-            },
-            {
-              "help": "VALUE/NUMBER Set the current organization context for the request",
-              "name": "organization-id",
-              "shortname": null,
-              "value": null
-            },
-            {
-              "help": "VALUE/NUMBER Set the current organization context for the request",
-              "name": "organization-title",
-              "shortname": null,
-              "value": null
-            },
-            {
-              "help": "Associated organization names/titles/ids",
-              "name": "organizations",
-              "shortname": null,
-              "value": "LIST"
-            },
-            {
               "help": "Associated organization names/titles/ids",
               "name": "organization-ids",
-              "shortname": null,
-              "value": "LIST"
-            },
-            {
-              "help": "Associated organization names/titles/ids",
-              "name": "organization-titles",
               "shortname": null,
               "value": "LIST"
             },
@@ -34547,14 +34343,14 @@
               "value": "VALUE"
             },
             {
-              "help": "VALUE/NUMBER            Set the current location context for the request",
-              "name": "location",
+              "help": "Names/idsentifiers for Lifecycle Environment",
+              "name": "lifecycle-environment-ids",
               "shortname": null,
-              "value": null
+              "value": "LIST"
             },
             {
               "help": "VALUE/NUMBER            Set the current location context for the request",
-              "name": "location-id",
+              "name": "location",
               "shortname": null,
               "value": null
             },
@@ -34728,52 +34524,10 @@
               "value": "VALUE"
             },
             {
-              "help": "VALUE/NUMBER            Set the current location context for the request",
-              "name": "location",
-              "shortname": null,
-              "value": null
-            },
-            {
-              "help": "VALUE/NUMBER            Set the current location context for the request",
-              "name": "location-id",
-              "shortname": null,
-              "value": null
-            },
-            {
-              "help": "VALUE/NUMBER            Set the current location context for the request",
-              "name": "location-title",
-              "shortname": null,
-              "value": null
-            },
-            {
               "help": "Set the current organization context for the request",
               "name": "name",
               "shortname": null,
               "value": "VALUE"
-            },
-            {
-              "help": "VALUE/NUMBER Set the current organization context for the request",
-              "name": "organization",
-              "shortname": null,
-              "value": null
-            },
-            {
-              "help": "VALUE/NUMBER Set the current organization context for the request",
-              "name": "organization-id",
-              "shortname": null,
-              "value": null
-            },
-            {
-              "help": "VALUE/NUMBER Set the current organization context for the request",
-              "name": "organization-title",
-              "shortname": null,
-              "value": null
-            },
-            {
-              "help": "VALUE/NUMBER Set the current organization context for the request",
-              "name": "organization-label",
-              "shortname": null,
-              "value": null
             },
             {
               "help": "Set the current organization context for the request",
@@ -34850,52 +34604,10 @@
               "value": "VALUE"
             },
             {
-              "help": "VALUE/NUMBER            Set the current location context for the request",
-              "name": "location",
-              "shortname": null,
-              "value": null
-            },
-            {
-              "help": "VALUE/NUMBER            Set the current location context for the request",
-              "name": "location-id",
-              "shortname": null,
-              "value": null
-            },
-            {
-              "help": "VALUE/NUMBER            Set the current location context for the request",
-              "name": "location-title",
-              "shortname": null,
-              "value": null
-            },
-            {
               "help": "Set the current organization context for the request",
               "name": "name",
               "shortname": null,
               "value": "VALUE"
-            },
-            {
-              "help": "VALUE/NUMBER Set the current organization context for the request",
-              "name": "organization",
-              "shortname": null,
-              "value": null
-            },
-            {
-              "help": "VALUE/NUMBER Set the current organization context for the request",
-              "name": "organization-id",
-              "shortname": null,
-              "value": null
-            },
-            {
-              "help": "VALUE/NUMBER Set the current organization context for the request",
-              "name": "organization-title",
-              "shortname": null,
-              "value": null
-            },
-            {
-              "help": "VALUE/NUMBER Set the current organization context for the request",
-              "name": "organization-label",
-              "shortname": null,
-              "value": null
             },
             {
               "help": "Set the current organization context for the request",
@@ -34929,52 +34641,10 @@
               "value": "BOOLEAN"
             },
             {
-              "help": "VALUE/NUMBER            Set the current location context for the request",
-              "name": "location",
-              "shortname": null,
-              "value": null
-            },
-            {
-              "help": "VALUE/NUMBER            Set the current location context for the request",
-              "name": "location-id",
-              "shortname": null,
-              "value": null
-            },
-            {
-              "help": "VALUE/NUMBER            Set the current location context for the request",
-              "name": "location-title",
-              "shortname": null,
-              "value": null
-            },
-            {
               "help": "Sort field and order, eg. 'id DESC'",
               "name": "order",
               "shortname": null,
               "value": "VALUE"
-            },
-            {
-              "help": "VALUE/NUMBER Set the current organization context for the request",
-              "name": "organization",
-              "shortname": null,
-              "value": null
-            },
-            {
-              "help": "VALUE/NUMBER Set the current organization context for the request",
-              "name": "organization-id",
-              "shortname": null,
-              "value": null
-            },
-            {
-              "help": "VALUE/NUMBER Set the current organization context for the request",
-              "name": "organization-title",
-              "shortname": null,
-              "value": null
-            },
-            {
-              "help": "VALUE/NUMBER Set the current organization context for the request",
-              "name": "organization-label",
-              "shortname": null,
-              "value": null
             },
             {
               "help": "Page number, starting at 1",
@@ -35564,14 +35234,14 @@
               "value": "VALUE"
             },
             {
-              "help": "VALUE/NUMBER            Set the current location context for the request",
-              "name": "location",
+              "help": "Names/idsentifiers for Lifecycle Environment",
+              "name": "lifecycle-environment-ids",
               "shortname": null,
-              "value": null
+              "value": "LIST"
             },
             {
               "help": "VALUE/NUMBER            Set the current location context for the request",
-              "name": "location-id",
+              "name": "location",
               "shortname": null,
               "value": null
             },
